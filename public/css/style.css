@@ -314,7 +314,7 @@ main .swiper .swiper-slide {
   position: relative;
 }
 main .hoverMovie {
-  visibility:hidden;
+  visibility: visible;
   position: absolute;
   top: 0;
   left: 0;
@@ -667,5 +667,4 @@ footer .copyright {
 }
 .movie-popup .crossMovie:is(:hover, :focus) {
   cursor: pointer;
-}/*# sourceMappingURL=style.css.map */
-
+}
