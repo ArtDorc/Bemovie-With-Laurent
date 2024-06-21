@@ -1,3 +1,4 @@
+
 document.querySelectorAll(".signinButton").forEach(item => item.addEventListener("click",displaySignin));
 document.querySelector(".cross").addEventListener('click',closeSignin);
 document.querySelector(".signin").addEventListener('click',closeSignin);
@@ -42,3 +43,4 @@ function closeHover(e){
         e.target.querySelector(".hoverMovie").style.visibility="hidden";
     }
 }
+
