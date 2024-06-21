@@ -94,19 +94,20 @@ fetch("https://api.themoviedb.org/3/genre/movie/list?language=en-US", options)
   })
   .catch((err) => console.error(err));
 
-// Select the UL list
+// list ul 
 let swiperP = document.getElementsByClassName("genresList")[0];
 
-// Function to handle the click event
+// click catégories
 const clickGenres = function () {
-  // Update the innerHTML of the <p> element with the id "category"
+
   document.getElementById("category").innerHTML = this.innerHTML;
 };
 
-// Get all the LI elements within the UL
+// li de l'ul
 let liElements = swiperP.getElementsByTagName("li");
 
-// Add event listener to each LI element
+// event.LI
 for (let i = 0; i < liElements.length; i++) {
   liElements[i].addEventListener("click", clickGenres);
 }
+
